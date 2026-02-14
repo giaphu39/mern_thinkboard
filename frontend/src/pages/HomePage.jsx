@@ -18,7 +18,8 @@ const HomePage = () => {
       try{
         // const res = await fetch("https://localhost:3000/api/notes") // 3000 này là port của backend
         // const data = await res.json();
-        const res = await axios.get("http://localhost:3000/api/notes")
+        // const res = await axios.get("http://localhost:3000/api/notes")
+        const res = await api.get("/notes")
         console.log(res.data);
         setNotes(res.data);
         setIsRateLimited(false);

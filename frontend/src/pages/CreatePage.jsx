@@ -25,11 +25,12 @@ const CreatePage = () => {
     setLoading(true);
     try {
       // dùng trực tiếp nhưng chưa sát do lộ backend
-      await axios.post("http://localhost:3000/api/notes", { title, content });
-      // await api.post("/notes", { // đây là viết kiểu global instance -> tính không lặp lại trong oop
-      //   title,
-      //   content,
-      // });
+      //fix bug deploy
+      // await axios.post("http://localhost:3000/api/notes", { title, content });
+      await api.post("/notes", { // đây là viết kiểu global instance -> tính không lặp lại trong oop
+        title,
+        content,
+      });
 
       toast.success("Note created successfully!");
       navigate("/"); // -1 là backward, 1 là forward
