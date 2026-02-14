@@ -1,0 +1,48 @@
+/* https://v3.tailwindcss.com/docs/guides/vite
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* dùng tailwindcss đã viết tắt css rồi ở đây ta còn dùng thêm
+daisyUI để viết tắt tailwind nữa
+https://v4.daisyui.com/docs/install/
+*/
+
+
+/* npm i lucide-react
+=> thư viện icon react bản chất là SVG component
+npm i axios 
+Đây là HTTP client để gọi API.
+
+| Tính năng           | fetch | axios |
+| ------------------- | ----- | ----- |
+| Tự parse JSON       | ❌     | ✅     |
+| Interceptor         | ❌     | ✅     |
+| Timeout             | ❌     | ✅     |
+| Tự xử lý lỗi status | ❌     | ✅     |
+
+Nó là:
+
+Abstraction layer trên XMLHttpRequest / HTTP
+
+Giúp bạn:
+
+Thêm token tự động
+
+Handle error tập trung
+
+Retry request
+
+Cancel request
+
+
+
+UI Layer → lucide-react
+Network Layer → axios
+Routing Layer → react-router
+State Layer → zustand / redux
+Style Layer → tailwind / daisyUI
+
+*/
